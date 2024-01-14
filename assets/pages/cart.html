@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <div class="container">
+        <div class="navAlign">
+          <div class="logo">
+            <h3>Shopee</h3>
+          </div>
+          <nav class="navbar-links" id="navLinks">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search your item.."
+            />
+            <i class="fa-solid fa-user" id="dropdown">
+              <!-- <div class="dropdown-menu">
+                <h3>Emri</h3>
+                <a href="profile.html">Profile</a>
+                <a href="#" id="signout">Sign out</a>
+              </div> -->
+            </i>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- cart -->
+    <section id="cartSection">
+      <div class="container">
+        <div class="all-cart" id="allCart">
+          <div class="cart" id="cart">
+            <!-- <div class="cart-box">
+              <div class="img">
+                <img src="../images/1.jpg" alt="" />
+              </div>
+              <div class="cart-info">
+                <div class="info-left">
+                  <h3>Title</h3>
+                  <h1>1999</h1>
+                </div>
+                <div class="info-right">
+                  <input type="number" id="itemQuantity" value="1" />
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="cart-quantity">
+            <div class="cart-total">
+              <h1>Total due</h1>
+              <div class="total">
+                <h3>Subtotal: <span id="totalPrice">1999</span></h3>
+                <h3 id="discount">Discount: 0.00&euro;</h3>
+                <h3 id="totalDue">Total due:</h3>
+                <button id="confirmOrder">Confirm Order</button>
+              </div>
+            </div>
+            <div class="cart-promo">
+              <input
+                type="text"
+                name="promo"
+                id="promo"
+                placeholder="Promo Code"
+              />
+              <small id="promoSmall"></small>
+              <button id="applyPromo">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="emptyCart">
+      <img src="../images/emptyCart.png" />
+      <h2>Your cart is empty</h2>
+      <a href="../../index.html">Return to shop</a>
+    </section>
+
+    <section id="checkOut">
+      <div class="checkout" id="checkoutDiv">
+        <div class="leftCheck">
+          <h1>Thank You for your purchase!</h1>
+          <p>
+            Your order will be procesed within 24 hours during working days. We
+            will notify you on <b><span id="emailCart"></span></b> once your
+            order have been shiped
+          </p>
+          <div class="trackOrder">
+            <button id="trackOrder">Track Your Order</button>
+          </div>
+          <div class="trackOrder">
+            <button id="cancelOrder">Cancel Your Order</button>
+          </div>
+        </div>
+        <div class="rightCheck">
+          <h1>Order Summary</h1>
+          <div class="checkItems" id="checkItems">
+            <!-- <div class="checkBox" id="checkBox">
+              <div class="rightCheckText">
+                <img src="../images/1.jpg" alt="" />
+                <div class="checkText">
+                  <h3>title</h3>
+                  <br />
+                  <p>Qty: 1</p>
+                </div>
+              </div>
+              <h3 class="price-check">Price:</h3>
+            </div> -->
+          </div>
+          <br />
+          <hr />
+          <div class="checkOutSummary" id="checkOutSummary">
+            <div class="checkSummaryText">
+              <p>SubTotal</p>
+              <p id="totalCheck">1000</p>
+            </div>
+            <div class="checkSummaryText">
+              <p>Discount</p>
+              <p id="discountCheck">0.0&euro;</p>
+            </div>
+            <hr />
+            <div class="checkSummaryText">
+              <h1>Order Total</h1>
+              <h1 id="orderTotalCheck">1000</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/cart.js"></script>
+    <script src="../js/getUsers.js"></script>
+  </body>
+</html>
